@@ -1,15 +1,15 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "React Magic Paper",
+  "name": "React Magic Paper by @DevHammed",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "orb.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/x-png"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#B7481F",
   "background_color": "#ffffff"
 }
