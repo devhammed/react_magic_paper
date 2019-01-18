@@ -1,7 +1,7 @@
 {
   "main.css": "/react_magic_paper/static/css/main.3b35579f.chunk.css",
-  "main.js": "/react_magic_paper/static/js/main.1a8027f4.chunk.js",
-  "main.js.map": "/react_magic_paper/static/js/main.1a8027f4.chunk.js.map",
+  "main.js": "/react_magic_paper/static/js/main.1cff52a0.chunk.js",
+  "main.js.map": "/react_magic_paper/static/js/main.1cff52a0.chunk.js.map",
   "static/js/1.5a9814aa.chunk.js": "/react_magic_paper/static/js/1.5a9814aa.chunk.js",
   "static/js/1.5a9814aa.chunk.js.map": "/react_magic_paper/static/js/1.5a9814aa.chunk.js.map",
   "runtime~main.js": "/react_magic_paper/static/js/runtime~main.8ea3af3a.js",
@@ -9,6 +9,6 @@
   "static/media/index.css": "/react_magic_paper/static/media/orb.5ac0f6af.png",
   "static/css/main.3b35579f.chunk.css.map": "/react_magic_paper/static/css/main.3b35579f.chunk.css.map",
   "index.html": "/react_magic_paper/index.html",
-  "precache-manifest.1cdd32bcc1a470782cf241cdd5ae5d0d.js": "/react_magic_paper/precache-manifest.1cdd32bcc1a470782cf241cdd5ae5d0d.js",
+  "precache-manifest.3b9552ebe6bc5130dcdade1cddbdf526.js": "/react_magic_paper/precache-manifest.3b9552ebe6bc5130dcdade1cddbdf526.js",
   "service-worker.js": "/react_magic_paper/service-worker.js"
 }
