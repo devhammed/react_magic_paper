@@ -32,19 +32,19 @@ export default class Magic extends Component {
           ? (
             <div style={{ margin: '15px auto' }}>
               <h3>Look for the Magic Symbol with your number!</h3>
-              <ul className='Magic__symbols'>{this.state.items}</ul>
+              <ul className='Magic__symbols shake'>{this.state.items}</ul>
               <button className='button' onClick={e => (this.setState({ selected: true }))}>Continue</button>
             </div>
           )
           : (
             <div style={{ margin: '15px auto' }} className='slide-in'>
               <h3>And your Magic Symbol is:- </h3>
-              <img src={require(`../assets/img/symbols/${this.state.uniqueImg}.png`)} width='50' height='50' />
+              <img src={require(`../assets/img/symbols/${this.state.uniqueImg}.png`)} alt='Magic Result' className='Magic__result shake' width='50' height='50' />
               <p>Don't be amazed alone, Kindly share this with your friends!</p>
+              <button className='button' onClick={e => this.props.changePage('about')}>Play Again</button>
             </div>
           )
         }
-        <button className='button' onClick={e => this.props.changePage('about')}>Home</button>
       </Card>
     )
   }
