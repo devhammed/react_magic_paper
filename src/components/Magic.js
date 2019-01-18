@@ -15,7 +15,7 @@ export default class Magic extends Component {
 
   componentWillMount () {
     let items = []
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 99; i++) {
       if ((i + 1) % 9 === 0) { // if index is a multiple of 9
         items[i] = <MagicSymbol index={this.state.uniqueImg} key={i} />
       } else {
@@ -34,7 +34,7 @@ export default class Magic extends Component {
               <p style={{ textAlign: 'left', margin: '0 auto', width: '50%' }}>
                 <h4>How To Play:</h4>
                 <ul>
-                  <li>Pick a number between 1 and 99 e.g <strong>54</strong></li>
+                  <li>Think of any two digits number e.g <strong>54</strong></li>
                   <li>Then add the two digits of that number e.g <strong>5 + 4</strong> that's <strong>9</strong></li>
                   <li>Then subtract your answer from the original number e.g <strong>54 - 9</strong>, that's <strong>45</strong></li>
                   <li>Then look for the Symbols that matches the result of above expression and take note of the Symbol.</li>
