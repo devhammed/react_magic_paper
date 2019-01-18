@@ -31,7 +31,16 @@ export default class Magic extends Component {
         { !this.state.selected
           ? (
             <div style={{ margin: '15px auto' }}>
-              <h3>Look for the Magic Symbol with your number!</h3>
+              <p style={{ textAlign: 'left', margin: '0 auto', width: '50%' }}>
+                <h4>How To Play:</h4>
+                <ul>
+                  <li>Pick a number between 1 and 99 e.g <strong>54</strong></li>
+                  <li>Then add the two digits of that number e.g <strong>5 + 4</strong> that's <strong>9</strong></li>
+                  <li>Then subtract your answer from the original number e.g <strong>54 - 9</strong>, that's <strong>45</strong></li>
+                  <li>Then look for the Symbols that matches the result of above expression and take note of the Symbol.</li>
+                </ul>
+                <p>and click the <strong>Continue</strong> button to enter the Multiverse.</p>
+              </p>
               <ul className='Magic__symbols shake'>{this.state.items}</ul>
               <button className='button' onClick={e => (this.setState({ selected: true }))}>Continue</button>
             </div>
