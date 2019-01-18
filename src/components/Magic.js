@@ -15,7 +15,7 @@ export default class Magic extends Component {
 
   componentWillMount () {
     let items = []
-    for (let i = 0; i < 99; i++) {
+    for (let i = 0; i < 100; i++) {
       if ((i + 1) % 9 === 0) { // if index is a multiple of 9
         items[i] = <MagicSymbol index={this.state.uniqueImg} key={i} />
       } else {
@@ -40,7 +40,7 @@ export default class Magic extends Component {
             <div style={{ margin: '15px auto' }} className='slide-in'>
               <h3>And your Magic Symbol is:- </h3>
               <img src={require(`../assets/img/symbols/${this.state.uniqueImg}.png`)} alt='Magic Result' className='Magic__result shake' width='50' height='50' />
-              <p>Don't be amazed alone, Kindly share this with your friends!</p>
+              <p>Amazing right? kindly share this with your friends!</p>
               <button className='button' onClick={e => this.props.changePage('about')}>Play Again</button>
             </div>
           )

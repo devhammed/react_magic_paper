@@ -7,11 +7,18 @@
 
 .Magic__symbol {
   border: 1px solid #B7481F;
-  padding: 10px;
+  padding: 12px;
   width: 13%;
+}
+
+.Magic__symbol__img {
+  width: 40px;
+  height: 40px;
 }
 
 .Magic__symbol::before {
   counter-increment: magic-symbol;
   content: counter(magic-symbol) ' ';
+  font-size: 20px;
+  font-weight: 700;
 }
