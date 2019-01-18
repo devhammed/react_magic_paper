@@ -8,7 +8,7 @@ export default class Magic extends Component {
     super(props)
     this.state = {
       items: [],
-      uniqueImg: (Math.floor(Math.random() * 6)) + 1,
+      uniqueImg: (Math.floor(Math.random() * 48)) + 1,
       selected: false
     }
   }
@@ -19,7 +19,7 @@ export default class Magic extends Component {
       if ((i + 1) % 9 === 0) { // if index is a multiple of 9
         items[i] = <MagicSymbol index={this.state.uniqueImg} key={i} />
       } else {
-        items[i] = <MagicSymbol index={(Math.floor(Math.random() * 6)) + 1} key={i} />
+        items[i] = <MagicSymbol index={(Math.floor(Math.random() * 48)) + 1} key={i} />
       }
     }
     this.setState({ items: items })
