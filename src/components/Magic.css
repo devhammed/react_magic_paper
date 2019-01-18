@@ -1,0 +1,17 @@
+.Magic__symbols {
+  counter-reset: magic-symbol;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Magic__symbol {
+  border: 1px solid #B7481F;
+  padding: 10px;
+  width: 13%;
+}
+
+.Magic__symbol::before {
+  counter-increment: magic-symbol;
+  content: counter(magic-symbol) ' ';
+}
