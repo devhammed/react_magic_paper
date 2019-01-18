@@ -1,28 +1,40 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import About from './components/About'
+import Magic from './components/Magic'
+import './App.css'
 
-class App extends Component {
-  render() {
+export default class App extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      page: 'about'
+    }
+    this.changePage = this.changePage.bind(this)
+  }
+
+  changePage (page) {
+    this.setState({
+      page: page
+    })
+  }
+
+  render () {
+    var pages = {
+      start: <Magic changePage={this.changePage} />,
+      about: <About changePage={this.changePage} />
+    }
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+      <div className='App'>
+        <header className='App__header slide-in'>
+          <h1 className='App__header-title'>React Magic Paper</h1>
+          <p className='App__header-tag' >Magical Paper from the Multiverse!</p>
         </header>
+        {pages[this.state.page]}
+        <footer className='App__footer slide-in'>
+          <p>Built by <a href='https://devhammed.github.io' className='App__footer-link'>Hammed Oyedele</a></p>
+        </footer>
       </div>
-    );
+    )
   }
 }
-
-export default App;
