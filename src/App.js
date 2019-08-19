@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import About from './components/About'
 import Magic from './components/Magic'
 import './App.css'
